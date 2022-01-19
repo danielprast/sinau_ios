@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SwiftLokalisasi/SwiftLokalisasi.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:MySwiftChallenges">
    </FileRef>
    <FileRef
@@ -12,18 +15,6 @@
    </FileRef>
    <FileRef
       location = "group:SinauSwiftYuAi/SinauSwiftYuAi.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:SinauApp/SinauApp.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:HitList/HitList.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:IceHouseLearningPath">
-   </FileRef>
-   <FileRef
-      location = "group:Riset">
    </FileRef>
    <FileRef
       location = "group:LearnUnitTest">

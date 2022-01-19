@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  SwiftLokalisasi
+
+  Created by Me on 19/01/22.
+  
+*/
+
+
+"header_text" = "Current Language"
+"change_language" = "Change Language"
