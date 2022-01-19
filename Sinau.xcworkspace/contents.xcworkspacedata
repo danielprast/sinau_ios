@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MySwiftChallenges">
+   </FileRef>
+   <FileRef
+      location = "group:CoreModule">
+   </FileRef>
+   <FileRef
+      location = "group:InputFormTableView">
+   </FileRef>
+   <FileRef
       location = "group:SinauSwiftYuAi/SinauSwiftYuAi.xcodeproj">
    </FileRef>
    <FileRef
