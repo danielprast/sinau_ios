@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200D580D279926450066F674 /* LocalizationSytemTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D580C279926450066F674 /* LocalizationSytemTest.swift */; };
+		2040288F27981E49008AE41F /* LocalizationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2040288E27981E49008AE41F /* LocalizationSystem.swift */; };
+		20402892279830D0008AE41F /* LocaleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20402891279830D0008AE41F /* LocaleText.swift */; };
 		7F78D998279808DF00C4DDE8 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F78D997279808DF00C4DDE8 /* XibView.swift */; };
 		7F78D9A5279814F000C4DDE8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F78D9A7279814F000C4DDE8 /* Localizable.strings */; };
 		7F8FEF762797F37B00AE285C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8FEF752797F37B00AE285C /* AppDelegate.swift */; };
@@ -42,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		200D580C279926450066F674 /* LocalizationSytemTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationSytemTest.swift; sourceTree = "<group>"; };
+		2040288E27981E49008AE41F /* LocalizationSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationSystem.swift; sourceTree = "<group>"; };
+		20402891279830D0008AE41F /* LocaleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleText.swift; sourceTree = "<group>"; };
 		7F78D997279808DF00C4DDE8 /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		7F78D9A6279814F000C4DDE8 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7F78D9AB279814FE00C4DDE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -93,10 +99,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7F78D99C279814AE00C4DDE8 /* SupportingFiles */ = {
+		2040289027983005008AE41F /* Config */ = {
 			isa = PBXGroup;
 			children = (
 				7F78D9A7279814F000C4DDE8 /* Localizable.strings */,
+				7F8FEFB42797F40E00AE285C /* AppConfig.swift */,
+				20402891279830D0008AE41F /* LocaleText.swift */,
+				2040288E27981E49008AE41F /* LocalizationSystem.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		7F78D99C279814AE00C4DDE8 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -124,6 +140,7 @@
 		7F8FEF742797F37B00AE285C /* SwiftLokalisasi */ = {
 			isa = PBXGroup;
 			children = (
+				2040289027983005008AE41F /* Config */,
 				7F78D99C279814AE00C4DDE8 /* SupportingFiles */,
 				7F8FEFDA2797F93F00AE285C /* Cores */,
 				7F8FEFB92797F44900AE285C /* Features */,
@@ -134,7 +151,6 @@
 				7F8FEF7E2797F37C00AE285C /* Assets.xcassets */,
 				7F8FEF802797F37C00AE285C /* LaunchScreen.storyboard */,
 				7F8FEF832797F37C00AE285C /* Info.plist */,
-				7F8FEFB42797F40E00AE285C /* AppConfig.swift */,
 			);
 			path = SwiftLokalisasi;
 			sourceTree = "<group>";
@@ -144,6 +160,7 @@
 			children = (
 				7F8FEF8C2797F37C00AE285C /* SwiftLokalisasiTests.swift */,
 				7F8FEF8E2797F37C00AE285C /* Info.plist */,
+				200D580C279926450066F674 /* LocalizationSytemTest.swift */,
 			);
 			path = SwiftLokalisasiTests;
 			sourceTree = "<group>";
@@ -362,7 +379,9 @@
 				7F8FEFB52797F40E00AE285C /* AppConfig.swift in Sources */,
 				7F8FEFD62797F85400AE285C /* SettingsView.swift in Sources */,
 				7F8FEF762797F37B00AE285C /* AppDelegate.swift in Sources */,
+				20402892279830D0008AE41F /* LocaleText.swift in Sources */,
 				7F8FEF782797F37B00AE285C /* SceneDelegate.swift in Sources */,
+				2040288F27981E49008AE41F /* LocalizationSystem.swift in Sources */,
 				7F78D998279808DF00C4DDE8 /* XibView.swift in Sources */,
 				7F8FEFDC2797F95400AE285C /* Extensions.swift in Sources */,
 			);
@@ -373,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F8FEF8D2797F37C00AE285C /* SwiftLokalisasiTests.swift in Sources */,
+				200D580D279926450066F674 /* LocalizationSytemTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,7 +502,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -538,7 +558,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -556,7 +576,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M9VP242345;
 				INFOPLIST_FILE = SwiftLokalisasi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -576,7 +595,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M9VP242345;
 				INFOPLIST_FILE = SwiftLokalisasi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -595,7 +613,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftLokalisasiTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -604,7 +621,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielprast.SwiftLokalisasiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftLokalisasi.app/SwiftLokalisasi";
 			};
 			name = Debug;
@@ -616,7 +632,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftLokalisasiTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -625,7 +640,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielprast.SwiftLokalisasiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftLokalisasi.app/SwiftLokalisasi";
 			};
 			name = Release;
@@ -644,7 +658,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielprast.SwiftLokalisasiUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = SwiftLokalisasi;
 			};
 			name = Debug;
@@ -663,7 +677,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielprast.SwiftLokalisasiUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = SwiftLokalisasi;
 			};
 			name = Release;

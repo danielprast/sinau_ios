@@ -17,4 +17,11 @@ class AppConfig {
         }
     }
     
+    let localeSystem = LocalizationSystem()
+    
+    // MARK: - Static
+    
+    static func getLocalizedText(forKey key: LocaleText) -> String {
+        return AppConfig.shared.localeSystem.getLocalizedText(forKey: key.rawValue)
+    }
 }

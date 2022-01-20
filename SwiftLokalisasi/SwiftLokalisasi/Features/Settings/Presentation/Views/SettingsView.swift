@@ -10,6 +10,8 @@ import UIKit
 class SettingsView: UIView {
 
     @IBOutlet weak var localeLabel: UILabel!
+    @IBOutlet weak var headerText: UILabel!
+    @IBOutlet weak var changeLanguageButton: UIButton!
     
     @IBAction func didTapChangeLanguageButton(_ sender: UIButton) {
         onTapChangeLanguageButton?()

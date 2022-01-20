@@ -9,23 +9,38 @@ import UIKit
 
 class SettingsController: UIViewController {
     
-    var controllerView: SettingsView {
+    var mainView: SettingsView {
         get {
             self.view as! SettingsView
         }
     }
     
+    fileprivate func handleSelectedLocalization() {
+        var locale: Locale
+        if AppConfig.shared.localeSystem.locale == .bahasa {
+            locale = .english
+        } else {
+            locale = .bahasa
+        }
+        AppConfig.shared.localeSystem.updateLocale(locale)
+        localizeElements()
+    }
+    
+    fileprivate func localizeElements() {
+        mainView.localeLabel.text = AppConfig.shared.localeSystem.locale.rawValue
+        mainView.changeLanguageButton.setTitle(AppConfig.getLocalizedText(forKey: .changeLanguage), for: .normal)
+    }
+    
     override func loadView() {
         self.view = XibView.nib() as SettingsView
-        controllerView.onTapChangeLanguageButton = { [unowned self] in
-            
+        mainView.onTapChangeLanguageButton = { [unowned self] in
+            self.handleSelectedLocalization()
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        localizeElements()
     }
     
     deinit {
