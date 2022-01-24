@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum LocaleText: String, CaseIterable {
+enum LocaleTextKeys: String, CaseIterable {
     case welcomeHeader = "welcome_header"
     case loginCaption = "login_caption"
     case registerCaption = "register_caption"

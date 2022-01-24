@@ -13,31 +13,31 @@ final class LocalizationSytemTest: XCTestCase {
     let localeSystem = LocalizationSystem()
     
     func test_getEnglishLoginCaption() {
-        let loginCaption = LocaleText.loginCaption
+        let loginCaption = LocaleTextKeys.loginCaption
         localeSystem.updateLocale(.english)
         XCTAssertEqual(localeSystem.getLocalizedText(forKey: loginCaption.rawValue), "Login")
     }
     
     func test_getBahasaLoginCaption() {
-        let loginCaption = LocaleText.loginCaption
+        let loginCaption = LocaleTextKeys.loginCaption
         localeSystem.updateLocale(.bahasa)
         XCTAssertEqual(localeSystem.getLocalizedText(forKey: loginCaption.rawValue), "Masuk")
     }
     
     func test_getEnglishRegisterCaption() {
-        let registerCaption = LocaleText.registerCaption
+        let registerCaption = LocaleTextKeys.registerCaption
         localeSystem.updateLocale(.english)
         XCTAssertEqual(localeSystem.getLocalizedText(forKey: registerCaption.rawValue), "Register")
     }
     
     func test_getBahasaRegisterCaption() {
-        let registerCaption = LocaleText.registerCaption
+        let registerCaption = LocaleTextKeys.registerCaption
         localeSystem.updateLocale(.bahasa)
         XCTAssertEqual(localeSystem.getLocalizedText(forKey: registerCaption.rawValue), "Daftar")
     }
     
     func test_getWelcomeHeaderKeyReturnsEmptyString() {
-        let caption: LocaleText = .welcomeHeader
+        let caption: LocaleTextKeys = .welcomeHeader
         XCTAssertEqual(localeSystem.getLocalizedText(forKey: caption.rawValue), "")
     }
     

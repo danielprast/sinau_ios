@@ -9,7 +9,14 @@
 /* Begin PBXBuildFile section */
 		200D580D279926450066F674 /* LocalizationSytemTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D580C279926450066F674 /* LocalizationSytemTest.swift */; };
 		2040288F27981E49008AE41F /* LocalizationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2040288E27981E49008AE41F /* LocalizationSystem.swift */; };
-		20402892279830D0008AE41F /* LocaleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20402891279830D0008AE41F /* LocaleText.swift */; };
+		20402892279830D0008AE41F /* LocaleTextKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20402891279830D0008AE41F /* LocaleTextKeys.swift */; };
+		2072E258279E93D200C0247A /* LocaleDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2072E257279E93D200C0247A /* LocaleDefault.swift */; };
+		2072E25D279E9BA200C0247A /* LocalePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2072E25C279E9BA200C0247A /* LocalePicker.swift */; };
+		2072E260279E9C5600C0247A /* LocaleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2072E25F279E9C5600C0247A /* LocaleModel.swift */; };
+		2072E262279E9F8800C0247A /* TileButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2072E261279E9F8800C0247A /* TileButtonView.swift */; };
+		2072E265279EA1C200C0247A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2072E264279EA1C200C0247A /* WelcomeViewController.swift */; };
+		2072E267279EA5B100C0247A /* ColorVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2072E266279EA5B100C0247A /* ColorVariables.swift */; };
+		2072E26B279EADAC00C0247A /* LocaleTileButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2072E26A279EADAC00C0247A /* LocaleTileButtonView.swift */; };
 		7F78D998279808DF00C4DDE8 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F78D997279808DF00C4DDE8 /* XibView.swift */; };
 		7F78D9A5279814F000C4DDE8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F78D9A7279814F000C4DDE8 /* Localizable.strings */; };
 		7F8FEF762797F37B00AE285C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8FEF752797F37B00AE285C /* AppDelegate.swift */; };
@@ -47,7 +54,14 @@
 /* Begin PBXFileReference section */
 		200D580C279926450066F674 /* LocalizationSytemTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationSytemTest.swift; sourceTree = "<group>"; };
 		2040288E27981E49008AE41F /* LocalizationSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationSystem.swift; sourceTree = "<group>"; };
-		20402891279830D0008AE41F /* LocaleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleText.swift; sourceTree = "<group>"; };
+		20402891279830D0008AE41F /* LocaleTextKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleTextKeys.swift; sourceTree = "<group>"; };
+		2072E257279E93D200C0247A /* LocaleDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleDefault.swift; sourceTree = "<group>"; };
+		2072E25C279E9BA200C0247A /* LocalePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalePicker.swift; sourceTree = "<group>"; };
+		2072E25F279E9C5600C0247A /* LocaleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleModel.swift; sourceTree = "<group>"; };
+		2072E261279E9F8800C0247A /* TileButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileButtonView.swift; sourceTree = "<group>"; };
+		2072E264279EA1C200C0247A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		2072E266279EA5B100C0247A /* ColorVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorVariables.swift; sourceTree = "<group>"; };
+		2072E26A279EADAC00C0247A /* LocaleTileButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleTileButtonView.swift; sourceTree = "<group>"; };
 		7F78D997279808DF00C4DDE8 /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		7F78D9A6279814F000C4DDE8 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7F78D9AB279814FE00C4DDE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -104,15 +118,78 @@
 			children = (
 				7F78D9A7279814F000C4DDE8 /* Localizable.strings */,
 				7F8FEFB42797F40E00AE285C /* AppConfig.swift */,
-				20402891279830D0008AE41F /* LocaleText.swift */,
-				2040288E27981E49008AE41F /* LocalizationSystem.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		2072E259279E9B4900C0247A /* Locale */ = {
+			isa = PBXGroup;
+			children = (
+				2072E25E279E9C2B00C0247A /* Data */,
+				2072E25B279E9B6F00C0247A /* Presentation */,
+				2072E25A279E9B6900C0247A /* Domain */,
+			);
+			path = Locale;
+			sourceTree = "<group>";
+		};
+		2072E25A279E9B6900C0247A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				2072E257279E93D200C0247A /* LocaleDefault.swift */,
+				20402891279830D0008AE41F /* LocaleTextKeys.swift */,
+				2040288E27981E49008AE41F /* LocalizationSystem.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		2072E25B279E9B6F00C0247A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2072E25C279E9BA200C0247A /* LocalePicker.swift */,
+				2072E26A279EADAC00C0247A /* LocaleTileButtonView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		2072E25E279E9C2B00C0247A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2072E25F279E9C5600C0247A /* LocaleModel.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2072E263279EA1B000C0247A /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				2072E264279EA1C200C0247A /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		2072E268279EAD6100C0247A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F8FEFDB2797F95400AE285C /* Extensions.swift */,
+				7F78D997279808DF00C4DDE8 /* XibView.swift */,
+				2072E261279E9F8800C0247A /* TileButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2072E269279EAD6900C0247A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2072E266279EA5B100C0247A /* ColorVariables.swift */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		7F78D99C279814AE00C4DDE8 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				7F8FEF832797F37C00AE285C /* Info.plist */,
+				7F8FEF7E2797F37C00AE285C /* Assets.xcassets */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -148,9 +225,7 @@
 				7F8FEF772797F37B00AE285C /* SceneDelegate.swift */,
 				7F8FEF792797F37B00AE285C /* ViewController.swift */,
 				7F8FEF7B2797F37B00AE285C /* Main.storyboard */,
-				7F8FEF7E2797F37C00AE285C /* Assets.xcassets */,
 				7F8FEF802797F37C00AE285C /* LaunchScreen.storyboard */,
-				7F8FEF832797F37C00AE285C /* Info.plist */,
 			);
 			path = SwiftLokalisasi;
 			sourceTree = "<group>";
@@ -177,6 +252,8 @@
 		7F8FEFB92797F44900AE285C /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				2072E263279EA1B000C0247A /* Welcome */,
+				2072E259279E9B4900C0247A /* Locale */,
 				7F8FEFC22797F61100AE285C /* Settings */,
 			);
 			path = Features;
@@ -235,8 +312,8 @@
 		7F8FEFDA2797F93F00AE285C /* Cores */ = {
 			isa = PBXGroup;
 			children = (
-				7F8FEFDB2797F95400AE285C /* Extensions.swift */,
-				7F78D997279808DF00C4DDE8 /* XibView.swift */,
+				2072E269279EAD6900C0247A /* Assets */,
+				2072E268279EAD6100C0247A /* Views */,
 			);
 			path = Cores;
 			sourceTree = "<group>";
@@ -376,11 +453,18 @@
 			files = (
 				7F8FEF7A2797F37B00AE285C /* ViewController.swift in Sources */,
 				7F8FEFBB2797F45A00AE285C /* SettingsController.swift in Sources */,
+				2072E258279E93D200C0247A /* LocaleDefault.swift in Sources */,
 				7F8FEFB52797F40E00AE285C /* AppConfig.swift in Sources */,
 				7F8FEFD62797F85400AE285C /* SettingsView.swift in Sources */,
 				7F8FEF762797F37B00AE285C /* AppDelegate.swift in Sources */,
-				20402892279830D0008AE41F /* LocaleText.swift in Sources */,
+				2072E25D279E9BA200C0247A /* LocalePicker.swift in Sources */,
+				2072E26B279EADAC00C0247A /* LocaleTileButtonView.swift in Sources */,
+				2072E267279EA5B100C0247A /* ColorVariables.swift in Sources */,
+				2072E260279E9C5600C0247A /* LocaleModel.swift in Sources */,
+				20402892279830D0008AE41F /* LocaleTextKeys.swift in Sources */,
 				7F8FEF782797F37B00AE285C /* SceneDelegate.swift in Sources */,
+				2072E265279EA1C200C0247A /* WelcomeViewController.swift in Sources */,
+				2072E262279E9F8800C0247A /* TileButtonView.swift in Sources */,
 				2040288F27981E49008AE41F /* LocalizationSystem.swift in Sources */,
 				7F78D998279808DF00C4DDE8 /* XibView.swift in Sources */,
 				7F8FEFDC2797F95400AE285C /* Extensions.swift in Sources */,

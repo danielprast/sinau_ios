@@ -21,7 +21,7 @@ class AppConfig {
     
     // MARK: - Static
     
-    static func getLocalizedText(forKey key: LocaleText) -> String {
+    static func getLocalizedText(forKey key: LocaleTextKeys) -> String {
         return AppConfig.shared.localeSystem.getLocalizedText(forKey: key.rawValue)
     }
 }

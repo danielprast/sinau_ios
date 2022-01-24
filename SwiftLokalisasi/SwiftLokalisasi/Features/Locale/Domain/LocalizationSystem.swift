@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 final class LocalizationSystem {
-    private(set) var locale: Locale! {
+    private(set) var locale: LocaleApp! {
         didSet {
             updateBundle()
         }
@@ -18,7 +18,11 @@ final class LocalizationSystem {
     private var bundle: Bundle?
     
     public init() {
-        updateLocale(.bahasa)
+        var currentLocale = LocaleDefault.localeID
+        if currentLocale.isEmpty {
+            currentLocale = LocaleApp.bahasa.rawValue
+        }
+        updateLocale(LocaleApp.map(currentLocale))
     }
     
     fileprivate func updateBundle() {
@@ -26,7 +30,7 @@ final class LocalizationSystem {
         bundle = Bundle(path: path)
     }
     
-    func updateLocale(_ locale: Locale) {
+    func updateLocale(_ locale: LocaleApp) {
         self.locale = locale
     }
     
@@ -37,12 +41,12 @@ final class LocalizationSystem {
     }
 }
 
-enum Locale: String, CaseIterable {
+enum LocaleApp: String, CaseIterable {
     case bahasa = "id"
     case english = "en"
 }
 
-extension Locale {
+extension LocaleApp {
     static func map(_ str: String) -> Self {
         switch str {
         case "id":

@@ -16,12 +16,13 @@ class SettingsController: UIViewController {
     }
     
     fileprivate func handleSelectedLocalization() {
-        var locale: Locale
+        var locale: LocaleApp
         if AppConfig.shared.localeSystem.locale == .bahasa {
             locale = .english
         } else {
             locale = .bahasa
         }
+        LocaleDefault.localeID = locale.rawValue
         AppConfig.shared.localeSystem.updateLocale(locale)
         localizeElements()
     }
@@ -29,6 +30,7 @@ class SettingsController: UIViewController {
     fileprivate func localizeElements() {
         mainView.localeLabel.text = AppConfig.shared.localeSystem.locale.rawValue
         mainView.changeLanguageButton.setTitle(AppConfig.getLocalizedText(forKey: .changeLanguage), for: .normal)
+        print("saved locale = \(LocaleDefault.localeID)")
     }
     
     override func loadView() {
